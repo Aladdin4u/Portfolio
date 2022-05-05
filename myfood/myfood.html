@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Food</title>
+	<style type="text/css">
+		html{box-sizing: border-box;}*,*:before,*:after{box-sizing: inherit;}
+		html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+		html,body {font-size: 15px;line-height: 1.5;}
+		body{margin: 0;}
+		a {background-color: transparent; color: inherit;}
+		h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+		h1,h2,h3,h4,h5,h6 {font-weight: 400;margin: 10px 0;}
+		hr{border:0;border-top:1px solid #eee;margin:20px 0;}
+		.ad-top {position: fixed;top:0;z-index:1; width:100%;}
+		.ad-image {max-width:100%;height:auto}img{vertical-align:middle}
+		.ad-ul {list-style-type: none;margin: 0;padding: 0;}
+		.ad-ul li {padding: 8px 16px; border-bottom: 1px solid #ccc;}
+		.ad-ul li:last-child {border-bottom: none;}
+		.ad-ul.ad-hoverable li:hover{background-color:#ccc;}
+		.ad-xlarge {font-size: 24px;}
+		.ad-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto;}
+		.ad-bar-block .ad-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+		.ad-bar-block .ad-bar-item{padding: 20px;}
+		.ad-button {border: none;display: inline-block; vertical-align: middle; padding: 8px 16px;color: inherit;background-color: inherit; text-decoration: none;cursor: pointer;overflow: hidden; text-align: center; white-space: nowrap;}
+		.ad-button:hover {color: #000; background-color: #ccc;}
+		.ad-card,.ad-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+		.ad-animate-left {position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+		.ad-content {margin-left: auto;margin-right: auto;}
+		.ad-margin-right {margin-right: 16px;}
+		.ad-margin-bottom {margin-bottom: 16px;}
+		.ad-container {padding: 0.01em 16px;}
+		.ad-padding {padding: 8px 16px;}
+		.ad-padding-16{padding-top: 16px;padding-bottom: 16px;}
+		.ad-padding-32{padding-top: 32px;padding-bottom: 32px;}
+		.ad-left {float: left;}.ad-center{text-align: center;} .ad-right {float: right;}
+		.ad-row-padding:before, .ad-row-padding:after {content: "";display: table;clear: both;}
+		.ad-row-padding > .ad-quarter, .ad-row-padding > .ad-third {padding: 0 8px;}
+		.ad-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center;}
+		.ad-small{font-size: 12px;}
+		.ad-quarter, .ad-third{float: left; width: 100%;}
+		.ad-white {color: #000;background-color: #fff;}
+		.ad-dark-grey {color:#fff;background-color:#616161;}
+		.ad-black, .ad-hover-black:hover {color: #fff;background-color: #000;}
+		@media (min-width: 601px) { .ad-quarter{width: 24.9999%;} .ad-third {width: 33.3333%} }
+	</style>
+</head>
+<body>
+	<!-- sidebar hidden -->
+	<nav class="ad-sidebar ad-bar-block ad-card ad-top ad-xlarge ad-animate-left" style="display:none; z-index:2; width: 40%; min-width: 300px;" id="mysidebar">
+		<a href="javascript:void(0)" onclick="ad_close()" class="ad-bar-item ad-button"> Close menu</a>
+		<a href="#food" onclick="ad_close()" class="ad-bar-item ad-button">Food</a>
+		<a href="#about" onclick="ad_close()" class="ad-bar-item ad-button">About</a>
+	</nav>
+  <!-- TOP MENU -->
+  <div class="ad-top">
+  	<div class="ad-white ad-xlarge" style="max-width: 1200px; margin: auto;">
+  		<div class="ad-button ad-left ad-padding-16" onclick="ad_open()">&#9776</div>
+  		<div class="ad-right ad-padding-16">Mail</div>
+  		<div class="ad-center ad-padding-16">My Food</div>
+  	</div>
+  </div>
+
+  <!-- PAGE CONTENT -->
+  <div class="ad-main ad-content ad-padding" style="max-width:1200px; margin-top:100px;">
+  	
+  	<!-- FIRST PHOTOGRID -->
+  	<div class="ad-row-padding ad-padding-16 ad-center" id="food">
+  		<div class="ad-quarter">
+  			<img src="image/sandwich.jpg" alt="Sandwich" style="width:100%;">
+  			<h3>The Perfect Sandwich, A Real NYC Classic</h3>
+  			<p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+  		</div>
+  		<div class="ad-quarter">
+  			<img src="image/steak.jpg" alt="Steak" style="width:100%;">
+  			<h3>Let Me Tell You About This Steak</h3>
+  			<p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+  		</div>
+  		<div class="ad-quarter">
+  			<img src="image/cherries.jpg" alt="Cherries" style="width:100%;">
+  			<h3>Cherries, interrupted</h3>
+  			<p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        <p>What else?</p>
+  		</div>
+  		<div class="ad-quarter">
+  			<img src="image/wine.jpg" alt="Pasta and Wine" style="width:100%;">
+  			<h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+  			<p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+  		</div>
+  	</div>
+
+  	<!-- SECOND PHOTOGRID -->
+  	<div class="ad-row-padding ad-padding-16 ad-center">
+  		<div class="ad-quarter">
+  			<img src="image/popsicle.jpg" alt="Popsicle" style="width:100%;">
+  			<h3>All I Need Is a Popsicle</h3>
+  			<p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+  		</div>
+  		<div class="ad-quarter">
+  			<img src="image/salmon.jpg" alt="Salmon" style="width:100%;">
+  			<h3>Salmon For Your Skin</h3>
+  			<p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+  		</div>
+  		<div class="ad-quarter">
+  			<img src="image/sandwich.jpg" alt="Sandwich" style="width:100%;">
+  			<h3>The Perfect Sandwich, A Real Classic</h3>
+  			<p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+  		</div>
+  		<div class="ad-quarter">
+  			<img src="image/croissant.jpg" alt="Croissant" style="width:100%;">
+  			<h3>Le French</h3>
+  			<p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+  		</div>
+  	</div>
+
+  	<!-- PAGINATION-->
+  	<div class="ad-center ad-padding-32">
+  		<div class="ad-bar">
+  			<a href="#" class="ad-bar-item ad-button ad-hover-black">&laquo</a>
+  			<a href="#" class="ad-bar-item ad-button ad-black">1</a>
+  			<a href="#" class="ad-bar-item ad-button ad-hover-black">2</a>
+  			<a href="#" class="ad-bar-item ad-button ad-hover-black">3</a>
+  			<a href="#" class="ad-bar-item ad-button ad-hover-black">4</a>
+  			<a href="#" class="ad-bar-item ad-button ad-hover-black">&raquo</a>
+  		</div>
+  	</div>
+
+  	<hr id="about">
+
+  	<!-- ABOUT SECTION -->
+  	<div class="ad-container ad-padding-32 ad-center">
+  		<h3>About Me, The Food Man</h3><br>
+  		<img src="image/chef.jpg" alt="chef-man" class="ad-image" style="display:block; margin:auto;" width="800" height="533">
+  		<div class="ad-padding-32">
+  			<h4><b>I am Who I Am!</b></h4>
+  			<h6><i>With Passion For Real, Good Food</i></h6>
+  			<p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+  		</div>
+  	</div>
+  	<hr>
+  	<!-- FOOTER SECTION -->
+  	<footer class="ad-row-padding ad-padding-32">
+  		<div class="ad-third">
+  			<h3>FOOTER</h3>
+  			<p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p>Powered by <a href="default.html" target="_blank">aladdin</a></p>
+  		</div>
+  		<div class="ad-third">
+  			<h3>BLOG POSTS</h3>
+  			<ul class="ad-ul ad-hoverable">
+  				<li class="ad-padding-16">
+  					<img src="image/workshop.jpg" class="ad-left ad-margin-right" style="width:50px;">
+  					<span class="ad-large">Lorem</span><br>
+            <span>Sed mattis nunc</span>
+  				</li>
+  				<li class="ad-padding-16">
+  					<img src="image/gondol.jpg" class="ad-left ad-margin-right" style="width:50px;">
+  					<span class="ad-large">Ipsum</span><br>
+            <span>Praes tinci sed</span>
+  				</li>
+  			</ul>
+  		</div>
+  		<div class="ad-third">
+  			<h3>POPULAR TAGS</h3>
+  			<p><span class="ad-tag ad-black ad-margin-bottom">Travel</span> <span class="ad-tag ad-dark-grey ad-small ad-margin-bottom">New York</span> <span class="ad-tag ad-dark-grey ad-small ad-margin-bottom">Dinner</span>
+        <span class="ad-tag ad-dark-grey ad-small ad-margin-bottom">Salmon</span> <span class="ad-tag ad-dark-grey ad-small ad-margin-bottom">France</span> <span class="ad-tag ad-dark-grey ad-small ad-margin-bottom">Drinks</span>
+        <span class="ad-tag ad-dark-grey ad-small ad-margin-bottom">Ideas</span> <span class="ad-tag ad-dark-grey ad-small ad-margin-bottom">Flavors</span> <span class="ad-tag ad-dark-grey ad-small ad-margin-bottom">Cuisine</span>
+        <span class="ad-tag ad-dark-grey ad-small ad-margin-bottom">Chicken</span> <span class="ad-tag ad-dark-grey ad-small ad-margin-bottom">Dressing</span> <span class="ad-tag ad-dark-grey ad-small ad-margin-bottom">Fried</span>
+        <span class="ad-tag ad-dark-grey ad-small ad-margin-bottom">Fish</span> <span class="ad-tag ad-dark-grey ad-small ad-margin-bottom">Duck</span>
+       </p>
+  		</div>
+  	</footer>
+  <!-- END PAGE CONTENT -->
+  </div>
+
+  <script type="text/javascript">
+  	// script for open and close sidebar
+  	function ad_open() {
+  		document.getElementById("mysidebar").style.display="block";
+  	}
+  	function ad_close() {
+  		document.getElementById("mysidebar").style.display="none";
+  	}
+  </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slides</title>
+	<style type="text/css">
+		.mySlides {
+			overflow: hidden;
+		}
+		figure {
+			position: relative;
+			width: 400%;
+			left: 0%;
+			margin: 0;
+			animation: slides 4s infinite;
+		}
+		img {
+			width: 25%;
+			float: left;
+		}
+			@keyframes slides{ 
+				0% {left: 0;}
+				25% {left: -100%;}
+				50% {left: -200%; }
+				75% {left: -200%;}
+				100% {left: -300%;}
+		}
+		.ad-display-container {display: block;}
+		.ad-center {text-align: center;}
+	</style>
+</head>
+<body>
+  <div class="mySlides">
+  	<figure>
+  	<img src="image/la.jpg">
+  	<img src="image/chicago.jpg">
+  	<img src="image/ny.jpg">
+  	<img src="image/la.jpg">
+  </figure>
+  </div>
+</body>
+</html>
